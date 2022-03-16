@@ -1,0 +1,30 @@
+.alt-screen-header {
+  padding-top: 40px;
+}
+
+.alt-screen-header__title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.alt-screen-header span:nth-child(2n + 1) {
+  width: 20%;
+}
+
+.alt-screen-header span:last-child {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.alt-screen-header span:nth-child(2) {
+  text-align: center;
+}
+
+.chat-screen .alt-screen-header .fa-bars {
+  margin-left: 20px;
+}
+
+.alt-screen-header i {
+  font-size: 25px;
+}

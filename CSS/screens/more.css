@@ -1,0 +1,28 @@
+.more-screen .icon-row {
+  margin-top: 35px;
+}
+
+.more-screen .icon-row__row:first-child {
+  margin-bottom: 50px;
+}
+
+.more-suggestions {
+  margin-top: 50px;
+  padding-top: 35px;
+  border-top: var(--main-border);
+}
+
+.more-suggestions__title {
+  margin-bottom: 20px;
+}
+
+.more-suggestions__icon-row__icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.more-suggestions__icon-row__icon span {
+  opacity: 0.6;
+}

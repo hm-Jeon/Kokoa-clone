@@ -14,20 +14,22 @@
   margin: 0 2px;
 }
 
-.friends-screen {
-  padding: 0px var(--horizontal-space);
-}
-
-.friends-screen__channel {
+.friends-screen__channel,
+.friends-screen__friends-list {
   margin-top: 20px;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: var(--main-border);
   padding-top: 10px;
 }
 
-.friends-screen_channel-header {
+.friends-screen_channel-header,
+.friends-screen_friends-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
-  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
+  color: var(--grey);
+}
+
+.friends-screen_friends-header div span:first-child {
+  margin-right: 3px;
 }

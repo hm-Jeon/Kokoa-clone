@@ -28,7 +28,12 @@
       <div class="screen-header__icons">
         <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
         <span><i class="fa-solid fa-music fa-lg"></i></span>
-        <span><i class="fa-solid fa-gear fa-lg"></i></span>
+        <span class="screen-header__icons-setting">
+          <a href="settings.html">
+            <i class="fa-solid fa-gear fa-lg"></i>
+          </a>
+          <span class="badge screen-header__icons-setting__notification"></span>
+        </span>
       </div>
     </header>
 
@@ -38,7 +43,7 @@
       <i class="fa-solid fa-chevron-right fa-xs"></i>
     </a>
 
-    <main class="friends-screen">
+    <main class="main-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
@@ -46,7 +51,7 @@
             src="https://cdnweb01.wikitree.co.kr/webdata/editor/202107/19/img_20210719114851_4a9c2f73.webp"
           />
           <div class="user-component__text">
-            <h4 class="user-component__title">User</h4>
+            <h4 class="user-component__title">Me</h4>
             <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
           </div>
         </div>
@@ -70,9 +75,83 @@
             </div>
           </div>
           <div class="user-component__column">
-            <span>2</span>
-            <i class="fa-solid fa-chevron-right fa-xs"></i>
+            <div>
+              <span>2</span>
+              <i class="fa-solid fa-chevron-right fa-xs"></i>
+            </div>
           </div>
+        </div>
+      </div>
+
+      <div class="friends-screen__friends-list">
+        <div class="friends-screen_friends-header">
+          <div>
+            <span>Friends</span>
+            <span>4</span>
+          </div>
+          <i class="fa-solid fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar--sm"
+              src="image/rosé.jpg"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                roses_are_rosie
+              </h4>
+              <h6 class="user-component__subtitle">
+                Everything I need is on the ground
+              </h6>
+            </div>
+          </div>
+          <div class="user-component__column"></div>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar--sm"
+              src="image/jennie.jpg"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                jennierubyjane
+              </h4>
+              <h6 class="user-component__subtitle">I'm Priceless</h6>
+            </div>
+          </div>
+          <div class="user-component__column"></div>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar--sm"
+              src="image/jisoo.jpg"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                sooyaaa__
+              </h4>
+              <h6 class="user-component__subtitle"></h6>
+            </div>
+          </div>
+          <div class="user-component__column"></div>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar--sm"
+              src="image/lisa.jpg"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                lalalalisa_m
+              </h4>
+              <h6 class="user-component__subtitle">MONEY</h6>
+            </div>
+          </div>
+          <div class="user-component__column"></div>
         </div>
       </div>
     </main>
@@ -85,20 +164,20 @@
           </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="#">
-            <span class="nav__notification">1</span>
+          <a class="nav__link" href="chats.html">
+            <span class="badge nav__notification">1</span>
             <i class="fa-regular fa-comment fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="#">
+          <a class="nav__link" href="find.html">
             <i class="fa-solid fa-magnifying-glass fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="#">
+          <a class="nav__link" href="more.html">
             <i class="fa-solid fa-ellipsis fa-2x"></i>
-            <span class="nav__notification"></span>
+            <span class="badge nav__notification"></span>
           </a>
         </li>
       </ul>

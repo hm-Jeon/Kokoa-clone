@@ -1,0 +1,156 @@
+.chat-screen {
+  background-color: #abc1d1;
+  height: 300vh;
+}
+
+.chat-screen .main-chat {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat-screen .status-bar,
+.chat-screen .alt-screen-header {
+  background-color: #abc1d1;
+}
+
+.chat__timestamp {
+  padding: 8px 15px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-top: 25px;
+}
+
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 40%;
+  margin-right: 8px;
+}
+
+.message-row__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.message__author {
+  color: var(--grey);
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__bubble {
+  padding: 13px 15px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 0 18px 18px;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.message__time {
+  color: var(--grey);
+  font-size: 13px;
+}
+
+.sent-message {
+  justify-content: flex-end;
+}
+
+.sent-message .message__info {
+  flex-direction: row-reverse;
+}
+
+.sent-message .message__bubble {
+  border-radius: 18px 0 18px 18px;
+  margin-right: 0;
+  margin-left: 5px;
+  background-color: var(--yellow);
+}
+
+.reply {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  height: 55px;
+  padding: 5px 10px;
+  bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.reply__column {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.reply__column:first-child {
+  width: 50px;
+}
+
+.reply__column:last-child {
+  width: 100%;
+  height: 100%;
+  border: var(--main-border);
+  border-radius: 30px;
+}
+
+.reply__column .fa-square-plus {
+  color: var(--grey);
+  position: absolute;
+  left: 6px;
+  font-size: 30px;
+}
+
+.reply__column input {
+  width: 55vw;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  margin-left: 12px;
+}
+
+.reply__column i {
+  cursor: pointer;
+}
+
+.reply__column > .fa-face-grin-wink {
+  font-size: 28px;
+  color: var(--grey);
+  position: absolute;
+  right: 60px;
+}
+
+.reply__column button {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background-color: var(--yellow);
+  padding: 8px;
+  border: none;
+  border-radius: 50%;
+  right: 2px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.reply__column button:active,
+.reply__column button:focus {
+  outline: none;
+}

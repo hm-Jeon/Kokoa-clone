@@ -1,0 +1,34 @@
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: tomato;
+  color: white;
+  font-weight: 600;
+}
+
+/* nav-bar notifications */
+.nav__notification {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.fa-ellipsis + .nav__notification {
+  width: 5px;
+  height: 5px;
+  bottom: 28px;
+  left: 28px;
+}
+
+/* screen-header notifications */
+.screen-header__icons-setting__notification {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: -5px;
+  right: -5px;
+}
