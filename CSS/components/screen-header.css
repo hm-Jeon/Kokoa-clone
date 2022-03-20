@@ -23,3 +23,16 @@
 .screen-header__icons-setting {
   position: relative;
 }
+
+.screen-header__icons-setting .fa-gear:hover {
+  animation: rotateSetting 2s linear infinite;
+}
+
+@keyframes rotateSetting {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
