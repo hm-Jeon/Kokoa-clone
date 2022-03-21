@@ -27,12 +27,22 @@
   background-color: #abc1d1;
 }
 
+@keyframes timestampAnimation {
+  from {
+    transform: rotateX(180deg);
+  }
+  to {
+    transform: none;
+  }
+}
+
 .chat__timestamp {
   padding: 8px 15px;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.2);
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
+  animation: timestampAnimation 1s ease-in-out forwards;
 }
 
 @keyframes rightIn {
@@ -197,9 +207,8 @@
 }
 
 .reply .reply__column:first-child,
-.reply .fa-face-grin-wink,
 .reply button {
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .reply:focus-within .reply__column:first-child,
@@ -214,9 +223,38 @@
 
 .reply:focus-within .reply__column:last-child {
   transform: translateY(-60px);
-  width: 95vw;
+  width: 92vw;
 }
 
 .reply:focus-within {
   transform: translateY(60px);
+}
+
+@keyframes sendHoverAnimation {
+  from {
+    transform: none;
+  }
+  25% {
+    transform: translate3d(-5px, 5px, 0);
+  }
+  80% {
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(200px, -100px, 0);
+  }
+}
+
+.reply__column button:hover .fa-paper-plane {
+  animation: sendHoverAnimation 1s ease-in-out forwards;
+}
+
+.reply__column .fa-square-plus,
+.reply__column .fa-face-grin-wink {
+  transition: all 0.5s;
+}
+
+.reply__column .fa-square-plus:hover,
+.reply__column .fa-face-grin-wink:hover {
+  color: var(--main-color);
 }

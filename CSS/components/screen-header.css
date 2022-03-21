@@ -36,3 +36,22 @@
     transform: rotateZ(360deg);
   }
 }
+
+.screen-header__icons .fa-magnifying-glass:hover {
+  animation: searchHoverAnimation 0.7s linear infinite;
+}
+
+@keyframes searchHoverAnimation {
+  from {
+    transform: none;
+  }
+  33% {
+    transform: rotateZ(-10deg);
+  }
+  66% {
+    transform: rotateZ(10deg);
+  }
+  to {
+    transform: none;
+  }
+}
