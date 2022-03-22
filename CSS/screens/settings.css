@@ -40,7 +40,7 @@
   opacity: 0.93;
 }
 
-.settins__setting-column:last-child {
+.settings__setting-column:last-child {
   opacity: 0.5;
   font-size: 18px;
 }
